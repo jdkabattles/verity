@@ -33,12 +33,15 @@ def test_claim_requires_evidence(tmp_path: Path):
         raise AssertionError("goal-only evidence should fail")
     except ValueError:
         pass
-    payload = assert_evidenced(
-        ledger,
-        [ledger.append({"kind": "tool_result", "ok": True}).index],
-        "the suite passed",
-    )
-    assert payload["evidence"]
+    obs = ledger.append({"kind": "observation", "text": "the suite passed, 3 passed 0 failed"})
+    payload = assert_evidenced(ledger, [obs.index], "the suite passed")
+    assert payload["evidence"] == [obs.index]
+    weak = ledger.append({"kind": "observation", "text": "binary found"})
+    try:
+        assert_evidenced(ledger, [weak.index], "the suite passed")
+        raise AssertionError("ungrounded claim should fail")
+    except ValueError as exc:
+        assert "missing" in str(exc)
 
 
 def test_score_against_spec(tmp_path: Path):
