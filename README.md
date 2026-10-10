@@ -35,3 +35,24 @@ Enterprise surveys in 2026 put agent pilots at about 78% and production scale un
 | Hosted multi-run ledger, team audit export, retention | no | yes |
 
 Paid is not built. The free core is the product until a hosted ledger has users. Do not star this for a promise. Star it if the check is useful.
+
+## Install on Termux
+
+The error `neither setup.py nor pyproject.toml found` means the command ran in home, not in this repo.
+
+```bash
+pkg install python git
+cd ~
+git clone https://github.com/jdkabattles/verity.git
+cd verity
+pip install -e .
+verity init --run run.jsonl
+verity log --run run.jsonl --kind goal --data '{"text":"confirm the suite passed"}'
+verity log --run run.jsonl --kind observation --data '{"text":"3 passed, 0 failed"}'
+verity claim --run run.jsonl --statement "the suite passed" --evidence 1
+verity verify --run run.jsonl
+printf '%s\n' '{"must_claim":["the suite passed"]}' > spec.json
+verity check --run run.jsonl --spec spec.json
+```
+
+`verity` is on PATH only after `pip install -e .` succeeds inside the cloned directory.
