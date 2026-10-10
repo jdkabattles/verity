@@ -41,7 +41,9 @@ def test_claim_requires_evidence(tmp_path: Path):
         assert_evidenced(ledger, [weak.index], "the suite passed")
         raise AssertionError("ungrounded claim should fail")
     except ValueError as exc:
-        assert "missing" in str(exc)
+        assert "does not support" in str(exc)
+    result = ledger.append({"kind": "observation", "text": "3 passed, 0 failed"})
+    assert_evidenced(ledger, [result.index], "the suite passed")
 
 
 def test_score_against_spec(tmp_path: Path):

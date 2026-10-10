@@ -1,4 +1,4 @@
-"""A claim is invalid unless cited evidence states the claim."""
+"""A claim is invalid unless cited evidence supports the statement."""
 
 from __future__ import annotations
 
@@ -12,6 +12,8 @@ STOP = {
     "was", "were", "has", "have", "been", "is", "are", "of", "to", "in",
     "on", "it", "its", "be", "by", "at", "as",
 }
+PASS_WORDS = {"pass", "passed", "passing", "ok", "success", "succeeded", "green"}
+FAIL_WORDS = {"fail", "failed", "failing", "error", "broken"}
 
 
 def assert_evidenced(ledger: Ledger, evidence_ids: list[int], statement: str) -> dict[str, Any]:
@@ -28,14 +30,56 @@ def assert_evidenced(ledger: Ledger, evidence_ids: list[int], statement: str) ->
     kinds = {e.payload.get("kind") for e in cited}
     if "observation" not in kinds and "tool_result" not in kinds:
         raise ValueError("claim must cite an observation or tool_result")
-    words = _content_words(statement)
-    if not words:
-        raise ValueError("statement has no content words")
-    blob = " ".join(w for e in cited for w in _content_words(_payload_text(e.payload)))
-    absent = [w for w in words if w not in blob.split()]
-    if absent:
-        raise ValueError(f"evidence does not state the claim; missing: {absent}")
-    return {"kind": "claim", "statement": statement, "evidence": evidence_ids}
+    evidence_text = " ".join(_payload_text(e.payload) for e in cited)
+    if _supports(statement, evidence_text):
+        return {"kind": "claim", "statement": statement, "evidence": evidence_ids}
+    raise ValueError(
+        "evidence does not support the claim. "
+        f"claim={statement!r} evidence={evidence_text!r}"
+    )
+
+
+def _supports(statement: str, evidence: str) -> bool:
+    claim_words = _content_words(statement)
+    evidence_words = set(_content_words(evidence))
+    if not claim_words:
+        return False
+    # Direct overlap: every content word, or a stem of it, is in the evidence.
+    if all(_present(w, evidence_words) for w in claim_words):
+        return True
+    # A pass claim is supported by a passing result that is not a failure.
+    if _is_pass_claim(claim_words) and _is_pass_result(evidence) and not _is_fail_result(evidence):
+        return True
+    return False
+
+
+def _is_pass_claim(words: list[str]) -> bool:
+    return any(w in PASS_WORDS or w.startswith("pass") for w in words)
+
+
+def _is_pass_result(text: str) -> bool:
+    low = text.lower()
+    if re.search(r"\b[1-9]\d*\s+passed\b", low):
+        return True
+    if re.search(r"\bpassed\b", low) and not re.search(r"\b[1-9]\d*\s+failed\b", low):
+        return True
+    return "exit 0" in low or "exit code 0" in low
+
+
+def _is_fail_result(text: str) -> bool:
+    low = text.lower()
+    if re.search(r"\b[1-9]\d*\s+failed\b", low):
+        return True
+    if re.search(r"\b0\s+failed\b", low):
+        return False
+    return any(w in FAIL_WORDS for w in _content_words(low))
+
+
+def _present(word: str, evidence_words: set[str]) -> bool:
+    if word in evidence_words:
+        return True
+    stem = word[:5]
+    return any(other.startswith(stem) or word.startswith(other[:5]) for other in evidence_words if len(other) >= 4)
 
 
 def _content_words(text: str) -> list[str]:
@@ -44,8 +88,4 @@ def _content_words(text: str) -> list[str]:
 
 
 def _payload_text(payload: dict[str, Any]) -> str:
-    parts = []
-    for value in payload.values():
-        if isinstance(value, str):
-            parts.append(value)
-    return " ".join(parts)
+    return " ".join(v for v in payload.values() if isinstance(v, str))

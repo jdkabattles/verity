@@ -2,7 +2,7 @@
 
 An append-only evidence ledger for agent runs.
 
-Agents fail in production because a fluent answer is not a proof. Verity makes the run a chain: every goal, tool call, tool result, and observation is hashed to the previous line. A claim is rejected unless it cites an observation or a tool result whose text contains every content word in the statement. Tamper a line and `verity verify` fails.
+Agents fail in production because a fluent answer is not a proof. Verity makes the run a chain: every goal, tool call, tool result, and observation is hashed to the previous line. A claim is rejected unless cited evidence supports it. A passing test result supports a pass claim. An unrelated observation does not. Tamper a line and `verity verify` fails.
 
 ```bash
 pip install -e .
