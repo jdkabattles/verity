@@ -35,11 +35,3 @@ Enterprise surveys in 2026 put agent pilots at about 78% and production scale un
 | Hosted multi-run ledger, team audit export, retention | no | yes |
 
 Paid is not built. The free core is the product until a hosted ledger has users. Do not star this for a promise. Star it if the check is useful.
-
-## Honest ceiling
-
-This is not a Nobel. A Nobel is years of peer-reviewed work. This is not multimillions. GitLab, Grafana, ClickHouse, and Temporal reached those numbers with teams, years, and a paid cloud on top of a free core. A new repo with zero users makes $0. The path that has worked is: free core people run, then paid hosting and audit export once the core is in real CI. Conversion from free to paid on open source is typically 0.5–3%.
-
-## Stars
-
-Stars follow a thing people can run in one command, a README that shows the command, and a 48-hour launch: Show HN (Tuesday–Thursday, 7–10am PT), one relevant subreddit, one X post with a 30-second demo. Respond to every comment for 24 hours. GitHub Trending reacts to velocity, not to a trickle.
