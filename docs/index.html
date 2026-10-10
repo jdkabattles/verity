@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verity — evidence ledger for agent runs</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; font: 18px/1.5 ui-sans-serif, system-ui, sans-serif; background: #0e1116; color: #e8edf2; }
+    main { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+    h1 { font-size: 48px; line-height: 1.1; margin: 0 0 12px; }
+    .lede { font-size: 22px; color: #b7c3ce; margin: 0 0 32px; }
+    a { color: #8eb6ff; }
+    .row { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 40px; }
+    .btn { display: inline-block; padding: 12px 16px; border-radius: 8px; text-decoration: none; background: #e8edf2; color: #0e1116; font-weight: 650; }
+    .btn.secondary { background: transparent; color: #e8edf2; border: 1px solid #33404c; }
+    pre { background: #161b22; border: 1px solid #26313b; border-radius: 10px; padding: 16px; overflow: auto; font-size: 14px; }
+    h2 { margin-top: 40px; font-size: 24px; }
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+    .note { color: #9aabba; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Verity</h1>
+    <p class="lede">An append-only evidence ledger for agent runs. A claim is accepted only when the recorded result supports it.</p>
+    <div class="row">
+      <a class="btn" href="https://github.com/jdkabattles/verity">View on GitHub</a>
+      <a class="btn secondary" href="https://github.com/jdkabattles/verity#how-to-use">How to use</a>
+    </div>
+    <pre>verity init --run verity.jsonl
+verity log --run verity.jsonl --kind tool_result --data '{"text":"9 passed, 0 failed"}'
+verity claim --run verity.jsonl --statement "the bot tests passed" --evidence 1
+verity verify --run verity.jsonl</pre>
+    <h2>What it checks</h2>
+    <ul>
+      <li>Every line is hashed to the previous line. Edit one and <code>verity verify</code> fails.</li>
+      <li>A claim must cite an observation or a tool result.</li>
+      <li><code>9 passed, 0 failed</code> supports a pass claim. <code>binary found</code> does not.</li>
+    </ul>
+    <h2>How a real run looks</h2>
+    <p>Point it at a project. Run the tests. Log the output. Claim only what that output supports.</p>
+    <pre>cd your-project
+verity init --run verity.jsonl
+verity log --run verity.jsonl --kind goal --data '{"text":"run the tests and report the real result"}'
+# run the suite, then log the real output
+verity log --run verity.jsonl --kind tool_result --data '{"text":"9 passed, 0 failed"}'
+verity claim --run verity.jsonl --statement "the bot tests passed" --evidence 1
+printf '%s\n' '{"must_claim":["the bot tests passed"]}' > spec.json
+verity check --run verity.jsonl --spec spec.json</pre>
+    <p class="note">A passing check means this run is intact and the claim is supported. It does not mean the next run will pass.</p>
+    <h2>Install</h2>
+    <pre>git clone https://github.com/jdkabattles/verity.git
+cd verity
+pip install -e .</pre>
+  </main>
+</body>
+</html>
