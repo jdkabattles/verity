@@ -1,0 +1,17 @@
+[project]
+name = "verity"
+version = "0.1.0"
+description = "Append-only evidence ledger for agent runs. Claims must cite evidence. The chain detects tampering."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+verity = "verity.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
