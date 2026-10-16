@@ -15,7 +15,7 @@
     { group: "Products", title: "mimicplus", desc: "Client-side HAR sanitizer that never uploads data. Live at forgingstack.com (its home).", url: "https://www.forgingstack.com/", status: "built" },
     { group: "Products", title: "Contract Gate", desc: "Contract Gate, its own website. Live at /gate/.", url: "https://www.forgingstack.com/gate/", status: "built" },
     { group: "Products", title: "Governed Agent Engine", desc: "Governed multi-agent engine. Not yet built as a site.", url: "", status: "coming_soon" },
-    { group: "Products", title: "EvidenceForge", desc: "Auditable, evidence-citing AI agents. Not yet live on this domain.", url: "", status: "coming_soon" },
+    { group: "Products", title: "EvidenceForge", desc: "Auditable, evidence-citing AI agents. Live at /evidenceforge/.", url: "https://www.forgingstack.com/evidenceforge/", status: "built" },
     { group: "Products", title: "Verity", desc: "Append-only evidence ledger for agent runs. This site.", url: "index.html", status: "built" }
   ];
 
