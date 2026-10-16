@@ -10,7 +10,7 @@
     { group: "Learn", title: "Blog", desc: "Essays behind the standard.", url: "https://jdkabattles.github.io/algorithmic-gold/blog/index.html", status: "built" },
     { group: "Learn", title: "Pattern Atlas", desc: "49 cited patterns behind the gates.", url: "https://jdkabattles.github.io/algorithmic-gold/patterns/index.html", status: "built" },
     { group: "Products", title: "Products", desc: "Live products under the standard.", url: "https://jdkabattles.github.io/algorithmic-gold/products/index.html", status: "built" },
-    { group: "Products", title: "Avcal-Agent", desc: "Sandboxed hidden-suite verification for agent-written code. Site exists as code in its repo; not yet live on this domain.", url: "", status: "coming_soon" },
+    { group: "Products", title: "Avcal-Agent", desc: "Sandboxed hidden-suite verification for agent-written code. Live at /avcal-agent/.", url: "https://www.forgingstack.com/avcal-agent/", status: "built" },
     { group: "Products", title: "harwatch", desc: "Freeze an API from a HAR. Fail the build when a field disappears. Live at /harwatch/.", url: "https://www.forgingstack.com/harwatch/", status: "built" },
     { group: "Products", title: "mimicplus", desc: "Client-side HAR sanitizer that never uploads data. Live at forgingstack.com (its home).", url: "https://www.forgingstack.com/", status: "built" },
     { group: "Products", title: "Contract Gate", desc: "Contract Gate, its own website. Live at /gate/.", url: "https://www.forgingstack.com/gate/", status: "built" },
