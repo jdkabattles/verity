@@ -1,1 +1,148 @@
-LyogVmVyaXR5IOKAlCBEaXJlY3RvcnkgTWFwcyB0ZXRoZXIuIFZhbmlsbGEsIHplcm8tZGVwZW5kZW5jeSwgbm8gdHJhY2tpbmcsIG5vIGV4dGVybmFsIGZldGNoZXMuCiAgIFRhYiBzYXlzICJEaXJlY3RvcnkgTWFwcyIuIERyYXdlciBYIHRvcC1yaWdodCBjbG9zZXMuIEVzY2FwZSArIHNjcmltIGNsaWNrIGFsc28gY2xvc2UuCiAgIEhPTkVTVFkgUlVMRTogYSAnYnVpbHQnIGVudHJ5IG11c3QgbGluayB0byBhIFVSTCB0aGF0IGFjdHVhbGx5IHNlcnZlcyB0aGF0IHNpdGUgdG9kYXkuCiAgIFN0YWdlZCAvIHBsYW5uZWQgLyBub3QteWV0LWxpdmUgdGFyZ2V0cyBhcmUgJ2NvbWluZ19zb29uJywgbmV2ZXIgJ2J1aWx0JyB3aXRoIGEgZGVhZCBsaW5rLiAqLwooZnVuY3Rpb24gKCkgewogICJ1c2Ugc3RyaWN0IjsKICB2YXIgRElSRUNUT1JZID0gWwogICAgeyBncm91cDogIkh1YiIsIHRpdGxlOiAiR29sZCBJcyBUaGUgUmVjZWlwdCIsIGRlc2M6ICJUaGUgaHViLiBMaXZlIGF0IC9odWIvLiIsIHVybDogImh0dHBzOi8vd3d3LmZvcmdpbmdzdGFjay5jb20vaHViLyIsIHN0YXR1czogImJ1aWx0IiB9LAogICAgeyBncm91cDogIlN0YW5kYXJkIiwgdGl0bGU6ICJBbGdvcml0aG1pYyBHb2xkIiwgZGVzYzogIlRoZSBzaXgtZ2F0ZSB2ZXJpZmljYXRpb24gc3RhbmRhcmQuIERvbmUgaXMgYSBjbGFpbS4gR09MRCBpcyBhIHJlY2VpcHQuIiwgdXJsOiAiaHR0cHM6Ly9qZGthYmF0dGxlcy5naXRodWIuaW8vYWxnb3JpdGhtaWMtZ29sZC8iLCBzdGF0dXM6ICJidWlsdCIgfSwKICAgIHsgZ3JvdXA6ICJMZWFybiIsIHRpdGxlOiAiQmxvZyIsIGRlc2M6ICJFc3NheXMgYmVoaW5kIHRoZSBzdGFuZGFyZC4iLCB1cmw6ICJodHRwczovL2pka2FiYXR0bGVzLmdpdGh1Yi5pby9hbGdvcml0aG1pYy1nb2xkL2Jsb2cvaW5kZXguaHRtbCIsIHN0YXR1czogImJ1aWx0IiB9LAogICAgeyBncm91cDogIkxlYXJuIiwgdGl0bGU6ICJQYXR0ZXJuIEF0bGFzIiwgZGVzYzogIjQ5IGNpdGVkIHBhdHRlcm5zIGJlaGluZCB0aGUgZ2F0ZXMuIiwgdXJsOiAiaHR0cHM6Ly9qZGthYmF0dGxlcy5naXRodWIuaW8vYWxnb3JpdGhtaWMtZ29sZC9wYXR0ZXJucy9pbmRleC5odG1sIiwgc3RhdHVzOiAiYnVpbHQiIH0sCiAgICB7IGdyb3VwOiAiUHJvZHVjdHMiLCB0aXRsZTogIlByb2R1Y3RzIiwgZGVzYzogIkxpdmUgcHJvZHVjdHMgdW5kZXIgdGhlIHN0YW5kYXJkLiIsIHVybDogImh0dHBzOi8vamRrYWJhdHRsZXMuZ2l0aHViLmlvL2FsZ29yaXRobWljLWdvbGQvcHJvZHVjdHMvaW5kZXguaHRtbCIsIHN0YXR1czogImJ1aWx0IiB9LAogICAgeyBncm91cDogIlByb2R1Y3RzIiwgdGl0bGU6ICJBdmNhbC1BZ2VudCIsIGRlc2M6ICJTYW5kYm94ZWQgaGlkZGVuLXN1aXRlIHZlcmlmaWNhdGlvbiBmb3IgYWdlbnQtd3JpdHRlbiBjb2RlLiBMaXZlIGF0IC9hdmNhbC1hZ2VudC8uIiwgdXJsOiAiaHR0cHM6Ly93d3cuZm9yZ2luZ3N0YWNrLmNvbS9hdmNhbC1hZ2VudC8iLCBzdGF0dXM6ICJidWlsdCIgfSwKICAgIHsgZ3JvdXA6ICJQcm9kdWN0cyIsIHRpdGxlOiAiaGFyd2F0Y2giLCBkZXNjOiAiRnJlZXplIGFuIEFQSSBmcm9tIGEgSEFSLiBGYWlsIHRoZSBidWlsZCB3aGVuIGEgZmllbGQgZGlzYXBwZWFycy4gTGl2ZSBhdCAvaGFyd2F0Y2gvLiIsIHVybDogImh0dHBzOi8vd3d3LmZvcmdpbmdzdGFjay5jb20vaGFyd2F0Y2gvIiwgc3RhdHVzOiAiYnVpbHQiIH0sCiAgICB7IGdyb3VwOiAiUHJvZHVjdHMiLCB0aXRsZTogIm1pbWljcGx1cyIsIGRlc2M6ICJDbGllbnQtc2lkZSBIQVIgc2FuaXRpemVyIHRoYXQgbmV2ZXIgdXBsb2FkcyBkYXRhLiBMaXZlIGF0IGZvcmdpbmdzdGFjay5jb20gKGl0cyBob21lKS4iLCB1cmw6ICJodHRwczovL3d3dy5mb3JnaW5nc3RhY2suY29tLyIsIHN0YXR1czogImJ1aWx0IiB9LAogICAgeyBncm91cDogIlByb2R1Y3RzIiwgdGl0bGU6ICJDb250cmFjdCBHYXRlIiwgZGVzYzogIkNvbnRyYWN0IEdhdGUsIGl0cyBvd24gd2Vic2l0ZS4gTGl2ZSBhdCAvZ2F0ZS8uIiwgdXJsOiAiaHR0cHM6Ly93d3cuZm9yZ2luZ3N0YWNrLmNvbS9nYXRlLyIsIHN0YXR1czogImJ1aWx0IiB9LAogICAgeyBncm91cDogIlByb2R1Y3RzIiwgdGl0bGU6ICJHb3Zlcm5lZCBBZ2VudCBFbmdpbmUiLCBkZXNjOiAiR292ZXJuZWQgbXVsdGktYWdlbnQgZW5naW5lLiBOb3QgeWV0IGJ1aWx0IGFzIGEgc2l0ZS4iLCB1cmw6ICIiLCBzdGF0dXM6ICJjb21pbmdfc29vbiIgfSwKICAgIHsgZ3JvdXA6ICJQcm9kdWN0cyIsIHRpdGxlOiAiRXZpZGVuY2VGb3JnZSIsIGRlc2M6ICJBdWRpdGFibGUsIGV2aWRlbmNlLWNpdGluZyBBSSBhZ2VudHMuIExpdmUgYXQgL2V2aWRlbmNlZm9yZ2UvLiIsIHVybDogImh0dHBzOi8vd3d3LmZvcmdpbmdzdGFjay5jb20vZXZpZGVuY2Vmb3JnZS8iLCBzdGF0dXM6ICJidWlsdCIgfSwKICAgIHsgZ3JvdXA6ICJQcm9kdWN0cyIsIHRpdGxlOiAiVmVyaXR5IiwgZGVzYzogIkFwcGVuZC1vbmx5IGV2aWRlbmNlIGxlZGdlciBmb3IgYWdlbnQgcnVucy4gVGhpcyBzaXRlLiIsIHVybDogImluZGV4Lmh0bWwiLCBzdGF0dXM6ICJidWlsdCIgfQogIF07CgogIGZ1bmN0aW9uIGVsKHRhZywgY2xzLCB0ZXh0KSB7CiAgICB2YXIgbiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQodGFnKTsKICAgIGlmIChjbHMpIG4uY2xhc3NOYW1lID0gY2xzOwogICAgaWYgKHRleHQgIT0gbnVsbCkgbi50ZXh0Q29udGVudCA9IHRleHQ7CiAgICByZXR1cm4gbjsKICB9CgogIGZ1bmN0aW9uIGJ1aWxkRHJhd2VyKCkgewogICAgdmFyIHNjcmltID0gZWwoImRpdiIsICJndC10ZXRoZXItc2NyaW0iKTsKICAgIHNjcmltLnNldEF0dHJpYnV0ZSgiZGF0YS10ZXRoZXItc2NyaW0iLCAiIik7CiAgICBzY3JpbS5oaWRkZW4gPSB0cnVlOwogICAgdmFyIGRyYXdlciA9IGVsKCJhc2lkZSIsICJndC10ZXRoZXItZHJhd2VyIik7CiAgICBkcmF3ZXIuc2V0QXR0cmlidXRlKCJhcmlhLWxhYmVsIiwgIkRpcmVjdG9yeSBNYXBzIik7CiAgICBkcmF3ZXIuaGlkZGVuID0gdHJ1ZTsKICAgIHZhciBoZWFkID0gZWwoImRpdiIsICJndC10ZXRoZXItaGVhZCIpOwogICAgdmFyIGgyID0gZWwoImgyIiwgImd0LXRldGhlci10aXRsZSIsICJEaXJlY3RvcnkgTWFwcyIpOwogICAgdmFyIGNsb3NlID0gZWwoImJ1dHRvbiIsICJndC10ZXRoZXItY2xvc2UteCIsICLDlyIpOwogICAgY2xvc2UudHlwZSA9ICJidXR0b24iOwogICAgY2xvc2Uuc2V0QXR0cmlidXRlKCJhcmlhLWxhYmVsIiwgIkNsb3NlIERpcmVjdG9yeSBNYXBzIik7CiAgICBjbG9zZS5zZXRBdHRyaWJ1dGUoImRhdGEtdGV0aGVyLWNsb3NlIiwgIiIpOwogICAgaGVhZC5hcHBlbmRDaGlsZChoMik7CiAgICBoZWFkLmFwcGVuZENoaWxkKGNsb3NlKTsKICAgIGRyYXdlci5hcHBlbmRDaGlsZChoZWFkKTsKICAgIHZhciBwID0gZWwoInAiLCAiZ3QtdGV0aGVyLWludHJvIiwgIkV2ZXJ5IHNpdGUuIEJ1aWx0IGVudHJpZXMgbGluayB0byB0aGVpciBwYWdlLiBVbmJ1aWx0IGVudHJpZXMgc2F5IENvbWluZyBTb29uLiIpOwogICAgZHJhd2VyLmFwcGVuZENoaWxkKHApOwogICAgdmFyIGxhYmVsID0gZWwoImxhYmVsIiwgImd0LXRldGhlci1zZWFyY2gtbGFiZWwiLCAiU2VhcmNoIHBhZ2VzIik7CiAgICBsYWJlbC5zZXRBdHRyaWJ1dGUoImZvciIsICJndC10ZXRoZXItc2VhcmNoIik7CiAgICB2YXIgc2VhcmNoID0gZWwoImlucHV0IiwgImd0LXRldGhlci1zZWFyY2giKTsKICAgIHNlYXJjaC5pZCA9ICJndC10ZXRoZXItc2VhcmNoIjsKICAgIHNlYXJjaC50eXBlID0gInNlYXJjaCI7CiAgICBzZWFyY2gucGxhY2Vob2xkZXIgPSAiU2VhcmNoIHBhZ2VzLCBlLmcuIEF0bGFzLCBDb250cmFjdCwgVmVyaXR5IjsKICAgIHNlYXJjaC5hdXRvY29tcGxldGUgPSAib2ZmIjsKICAgIGRyYXdlci5hcHBlbmRDaGlsZChsYWJlbCk7CiAgICBkcmF3ZXIuYXBwZW5kQ2hpbGQoc2VhcmNoKTsKICAgIHZhciBncm91cHMgPSB7fTsKICAgIERJUkVDVE9SWS5mb3JFYWNoKGZ1bmN0aW9uIChlKSB7CiAgICAgIChncm91cHNbZS5ncm91cF0gPSBncm91cHNbZS5ncm91cF0gfHwgW10pLnB1c2goZSk7CiAgICB9KTsKICAgIHZhciBsaXN0V3JhcCA9IGVsKCJkaXYiLCAiZ3QtdGV0aGVyLWdyb3VwcyIpOwogICAgT2JqZWN0LmtleXMoZ3JvdXBzKS5mb3JFYWNoKGZ1bmN0aW9uIChnKSB7CiAgICAgIHZhciBzZWN0aW9uID0gZWwoInNlY3Rpb24iLCAiZ3QtdGV0aGVyLWdyb3VwIik7CiAgICAgIHNlY3Rpb24uYXBwZW5kQ2hpbGQoZWwoImgzIiwgImd0LXRldGhlci1ncm91cC10aXRsZSIsIGcpKTsKICAgICAgdmFyIHVsID0gZWwoInVsIiwgImd0LXRldGhlci1saXN0Iik7CiAgICAgIGdyb3Vwc1tnXS5mb3JFYWNoKGZ1bmN0aW9uIChlKSB7CiAgICAgICAgdmFyIGxpID0gZWwoImxpIiwgImd0LXRldGhlci1pdGVtIik7CiAgICAgICAgaWYgKGUuc3RhdHVzID09PSAiY29taW5nX3Nvb24iKSB7CiAgICAgICAgICBsaS5hcHBlbmRDaGlsZChlbCgic3Ryb25nIiwgImd0LXRldGhlci1jb21pbmctdGl0bGUiLCBlLnRpdGxlKSk7CiAgICAgICAgICBsaS5hcHBlbmRDaGlsZChlbCgic3BhbiIsICJndC10ZXRoZXItY29taW5nLXNvb24iLCAiQ29taW5nIFNvb24iKSk7CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgIHZhciBhID0gZWwoImEiLCAiZ3QtdGV0aGVyLWxpbmsiLCBlLnRpdGxlKTsKICAgICAgICAgIGEuaHJlZiA9IGUudXJsOwogICAgICAgICAgbGkuYXBwZW5kQ2hpbGQoYSk7CiAgICAgICAgfQogICAgICAgIGxpLmFwcGVuZENoaWxkKGVsKCJzcGFuIiwgImd0LXRldGhlci1kZXNjIiwgZS5kZXNjKSk7CiAgICAgICAgdWwuYXBwZW5kQ2hpbGQobGkpOwogICAgICB9KTsKICAgICAgc2VjdGlvbi5hcHBlbmRDaGlsZCh1bCk7CiAgICAgIGxpc3RXcmFwLmFwcGVuZENoaWxkKHNlY3Rpb24pOwogICAgfSk7CiAgICBkcmF3ZXIuYXBwZW5kQ2hpbGQobGlzdFdyYXApOwogICAgdmFyIGVtcHR5ID0gZWwoInAiLCAiZ3QtdGV0aGVyLWVtcHR5IiwgIk5vIHBhZ2VzIG1hdGNoIHRoYXQgc2VhcmNoLiIpOwogICAgZW1wdHkuaGlkZGVuID0gdHJ1ZTsKICAgIGRyYXdlci5hcHBlbmRDaGlsZChlbXB0eSk7CiAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKHNjcmltKTsKICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoZHJhd2VyKTsKICAgIHNlYXJjaC5hZGRFdmVudExpc3RlbmVyKCJpbnB1dCIsIGZ1bmN0aW9uICgpIHsKICAgICAgdmFyIHEgPSBzZWFyY2gudmFsdWUudHJpbSgpLnRvTG93ZXJDYXNlKCk7CiAgICAgIHZhciBhbnkgPSBmYWxzZTsKICAgICAgbGlzdFdyYXAucXVlcnlTZWxlY3RvckFsbCgiLmd0LXRldGhlci1pdGVtIikuZm9yRWFjaChmdW5jdGlvbiAobGkpIHsKICAgICAgICB2YXIgc2hvdyA9ICFxIHx8IGxpLnRleHRDb250ZW50LnRvTG93ZXJDYXNlKCkuaW5kZXhPZihxKSAhPT0gLTE7CiAgICAgICAgbGkuaGlkZGVuID0gIXNob3c7CiAgICAgICAgaWYgKHNob3cpIGFueSA9IHRydWU7CiAgICAgIH0pOwogICAgICBlbXB0eS5oaWRkZW4gPSBhbnk7CiAgICB9KTsKICAgIHJldHVybiB7IHNjcmltOiBzY3JpbSwgZHJhd2VyOiBkcmF3ZXIsIGNsb3NlOiBjbG9zZSwgc2VhcmNoOiBzZWFyY2ggfTsKICB9CgogIGZ1bmN0aW9uIGluaXQoKSB7CiAgICB2YXIgbW91bnRzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiW2RhdGEtdGV0aGVyLW1vdW50XSIpOwogICAgdmFyIHVpID0gYnVpbGREcmF3ZXIoKTsKICAgIHZhciBvcGVuZXIgPSBudWxsOwogICAgZnVuY3Rpb24gb3BlbihvcCkgewogICAgICBvcGVuZXIgPSBvcCB8fCBudWxsOwogICAgICB1aS5zY3JpbS5oaWRkZW4gPSBmYWxzZTsKICAgICAgdWkuZHJhd2VyLmhpZGRlbiA9IGZhbHNlOwogICAgICB1aS5zZWFyY2gudmFsdWUgPSAiIjsKICAgICAgdWkuc2VhcmNoLmRpc3BhdGNoRXZlbnQobmV3IEV2ZW50KCJpbnB1dCIpKTsKICAgICAgdWkuY2xvc2UuZm9jdXMoKTsKICAgICAgZG9jdW1lbnQuYm9keS5jbGFzc0xpc3QuYWRkKCJndC10ZXRoZXItb3BlbiIpOwogICAgfQogICAgZnVuY3Rpb24gY2xvc2UoKSB7CiAgICAgIHVpLnNjcmltLmhpZGRlbiA9IHRydWU7CiAgICAgIHVpLmRyYXdlci5oaWRkZW4gPSB0cnVlOwogICAgICBkb2N1bWVudC5ib2R5LmNsYXNzTGlzdC5yZW1vdmUoImd0LXRldGhlci1vcGVuIik7CiAgICAgIGlmIChvcGVuZXIpIG9wZW5lci5mb2N1cygpOwogICAgfQogICAgaWYgKG1vdW50cy5sZW5ndGggPT09IDApIHsKICAgICAgdmFyIHRhYiA9IGVsKCJidXR0b24iLCAiZ3QtdGV0aGVyLWZhbGxiYWNrLXRhYiIsICJEaXJlY3RvcnkgTWFwcyIpOwogICAgICB0YWIudHlwZSA9ICJidXR0b24iOwogICAgICB0YWIuc2V0QXR0cmlidXRlKCJhcmlhLWxhYmVsIiwgIk9wZW4gRGlyZWN0b3J5IE1hcHMiKTsKICAgICAgdGFiLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZnVuY3Rpb24gKCkgeyBvcGVuKHRhYik7IH0pOwogICAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKHRhYik7CiAgICB9IGVsc2UgewogICAgICBtb3VudHMuZm9yRWFjaChmdW5jdGlvbiAobSkgewogICAgICAgIHZhciBidG4gPSBlbCgiYnV0dG9uIiwgImd0LXRldGhlci10YWIiLCAiRGlyZWN0b3J5IE1hcHMiKTsKICAgICAgICBidG4udHlwZSA9ICJidXR0b24iOwogICAgICAgIGJ0bi5zZXRBdHRyaWJ1dGUoImFyaWEtbGFiZWwiLCAiT3BlbiBEaXJlY3RvcnkgTWFwcyIpOwogICAgICAgIGJ0bi5zZXRBdHRyaWJ1dGUoImRhdGEtb3Blbi1tYXAiLCAiIik7CiAgICAgICAgYnRuLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZnVuY3Rpb24gKCkgeyBvcGVuKGJ0bik7IH0pOwogICAgICAgIG0uYXBwZW5kQ2hpbGQoYnRuKTsKICAgICAgfSk7CiAgICB9CiAgICB1aS5jbG9zZS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGNsb3NlKTsKICAgIHVpLnNjcmltLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgY2xvc2UpOwogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigia2V5ZG93biIsIGZ1bmN0aW9uIChlKSB7CiAgICAgIGlmIChlLmtleSA9PT0gIkVzY2FwZSIgJiYgIXVpLmRyYXdlci5oaWRkZW4pIGNsb3NlKCk7CiAgICB9KTsKICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoIltkYXRhLW9wZW4tbWFwXSIpLmZvckVhY2goZnVuY3Rpb24gKGIpIHsKICAgICAgaWYgKCFiLmNsb3Nlc3QoIltkYXRhLXRldGhlci1tb3VudF0iKSkgYi5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGZ1bmN0aW9uICgpIHsgb3BlbihiKTsgfSk7CiAgICB9KTsKICB9CgogIGlmIChkb2N1bWVudC5yZWFkeVN0YXRlID09PSAibG9hZGluZyIpIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIkRPTUNvbnRlbnRMb2FkZWQiLCBpbml0KTsKICBlbHNlIGluaXQoKTsKfSkoKTsKCg==
+/* Verity — Directory Maps tether. Vanilla, zero-dependency, no tracking, no external fetches.
+   Tab says "Directory Maps". Drawer X top-right closes. Escape + scrim click also close.
+   HONESTY RULE: a 'built' entry must link to a URL that actually serves that site today.
+   Staged / planned / not-yet-live targets are 'coming_soon', never 'built' with a dead link. */
+(function () {
+  "use strict";
+  var DIRECTORY = [
+    { group: "Hub", title: "Gold Is The Receipt", desc: "The hub. Live at /hub/.", url: "https://www.forgingstack.com/hub/", status: "built" },
+    { group: "Standard", title: "Algorithmic Gold", desc: "The six-gate verification standard. Done is a claim. GOLD is a receipt.", url: "https://jdkabattles.github.io/algorithmic-gold/", status: "built" },
+    { group: "Learn", title: "Blog", desc: "Essays behind the standard.", url: "https://jdkabattles.github.io/algorithmic-gold/blog/index.html", status: "built" },
+    { group: "Learn", title: "Pattern Atlas", desc: "49 cited patterns behind the gates.", url: "https://jdkabattles.github.io/algorithmic-gold/patterns/index.html", status: "built" },
+    { group: "Products", title: "Products", desc: "Live products under the standard.", url: "https://jdkabattles.github.io/algorithmic-gold/products/index.html", status: "built" },
+    { group: "Products", title: "Avcal-Agent", desc: "Sandboxed hidden-suite verification for agent-written code. Live at /avcal-agent/.", url: "https://www.forgingstack.com/avcal-agent/", status: "built" },
+    { group: "Products", title: "harwatch", desc: "Freeze an API from a HAR. Fail the build when a field disappears. Live at /harwatch/.", url: "https://www.forgingstack.com/harwatch/", status: "built" },
+    { group: "Products", title: "mimicplus", desc: "Client-side HAR sanitizer that never uploads data. Live at forgingstack.com (its home).", url: "https://www.forgingstack.com/", status: "built" },
+    { group: "Products", title: "Contract Gate", desc: "Contract Gate, its own website. Live at /gate/.", url: "https://www.forgingstack.com/gate/", status: "built" },
+    { group: "Products", title: "Governed Agent Engine", desc: "Governed multi-agent engine. Live at /governed-agent-engine/.", url: "https://www.forgingstack.com/governed-agent-engine/", status: "built" },
+    { group: "Products", title: "EvidenceForge", desc: "Auditable, evidence-citing AI agents. Live at /evidenceforge/.", url: "https://www.forgingstack.com/evidenceforge/", status: "built" },
+    { group: "Products", title: "Verity", desc: "Append-only evidence ledger for agent runs. This site.", url: "index.html", status: "built" }
+  ];
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function buildDrawer() {
+    var scrim = el("div", "gt-tether-scrim");
+    scrim.setAttribute("data-tether-scrim", "");
+    scrim.hidden = true;
+    var drawer = el("aside", "gt-tether-drawer");
+    drawer.setAttribute("aria-label", "Directory Maps");
+    drawer.hidden = true;
+    var head = el("div", "gt-tether-head");
+    var h2 = el("h2", "gt-tether-title", "Directory Maps");
+    var close = el("button", "gt-tether-close-x", "×");
+    close.type = "button";
+    close.setAttribute("aria-label", "Close Directory Maps");
+    close.setAttribute("data-tether-close", "");
+    head.appendChild(h2);
+    head.appendChild(close);
+    drawer.appendChild(head);
+    var p = el("p", "gt-tether-intro", "Every site. Built entries link to their page. Unbuilt entries say Coming Soon.");
+    drawer.appendChild(p);
+    var label = el("label", "gt-tether-search-label", "Search pages");
+    label.setAttribute("for", "gt-tether-search");
+    var search = el("input", "gt-tether-search");
+    search.id = "gt-tether-search";
+    search.type = "search";
+    search.placeholder = "Search pages, e.g. Atlas, Contract, Verity";
+    search.autocomplete = "off";
+    drawer.appendChild(label);
+    drawer.appendChild(search);
+    var groups = {};
+    DIRECTORY.forEach(function (e) {
+      (groups[e.group] = groups[e.group] || []).push(e);
+    });
+    var listWrap = el("div", "gt-tether-groups");
+    Object.keys(groups).forEach(function (g) {
+      var section = el("section", "gt-tether-group");
+      section.appendChild(el("h3", "gt-tether-group-title", g));
+      var ul = el("ul", "gt-tether-list");
+      groups[g].forEach(function (e) {
+        var li = el("li", "gt-tether-item");
+        if (e.status === "coming_soon") {
+          li.appendChild(el("strong", "gt-tether-coming-title", e.title));
+          li.appendChild(el("span", "gt-tether-coming-soon", "Coming Soon"));
+        } else {
+          var a = el("a", "gt-tether-link", e.title);
+          a.href = e.url;
+          li.appendChild(a);
+        }
+        li.appendChild(el("span", "gt-tether-desc", e.desc));
+        ul.appendChild(li);
+      });
+      section.appendChild(ul);
+      listWrap.appendChild(section);
+    });
+    drawer.appendChild(listWrap);
+    var empty = el("p", "gt-tether-empty", "No pages match that search.");
+    empty.hidden = true;
+    drawer.appendChild(empty);
+    document.body.appendChild(scrim);
+    document.body.appendChild(drawer);
+    search.addEventListener("input", function () {
+      var q = search.value.trim().toLowerCase();
+      var any = false;
+      listWrap.querySelectorAll(".gt-tether-item").forEach(function (li) {
+        var show = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+        li.hidden = !show;
+        if (show) any = true;
+      });
+      empty.hidden = any;
+    });
+    return { scrim: scrim, drawer: drawer, close: close, search: search };
+  }
+
+  function init() {
+    var mounts = document.querySelectorAll("[data-tether-mount]");
+    var ui = buildDrawer();
+    var opener = null;
+    function open(op) {
+      opener = op || null;
+      ui.scrim.hidden = false;
+      ui.drawer.hidden = false;
+      ui.search.value = "";
+      ui.search.dispatchEvent(new Event("input"));
+      ui.close.focus();
+      document.body.classList.add("gt-tether-open");
+    }
+    function close() {
+      ui.scrim.hidden = true;
+      ui.drawer.hidden = true;
+      document.body.classList.remove("gt-tether-open");
+      if (opener) opener.focus();
+    }
+    if (mounts.length === 0) {
+      var tab = el("button", "gt-tether-fallback-tab", "Directory Maps");
+      tab.type = "button";
+      tab.setAttribute("aria-label", "Open Directory Maps");
+      tab.addEventListener("click", function () { open(tab); });
+      document.body.appendChild(tab);
+    } else {
+      mounts.forEach(function (m) {
+        var btn = el("button", "gt-tether-tab", "Directory Maps");
+        btn.type = "button";
+        btn.setAttribute("aria-label", "Open Directory Maps");
+        btn.setAttribute("data-open-map", "");
+        btn.addEventListener("click", function () { open(btn); });
+        m.appendChild(btn);
+      });
+    }
+    ui.close.addEventListener("click", close);
+    ui.scrim.addEventListener("click", close);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !ui.drawer.hidden) close();
+    });
+    document.querySelectorAll("[data-open-map]").forEach(function (b) {
+      if (!b.closest("[data-tether-mount]")) b.addEventListener("click", function () { open(b); });
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+
