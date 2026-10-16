@@ -37,7 +37,7 @@
     a:hover { text-decoration: underline; }
     header {
       position: sticky; top: 0; z-index: 2;
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;
       padding: 16px 28px;
       border-bottom: 1px solid var(--line);
       background: rgba(7,9,12,.86);
@@ -105,7 +105,7 @@
 <!-- === TECHNICAL ADDITIONS (Directory Maps + discovery + verification TODOs). No visible content changed. === -->
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#07090c">
-  <!-- TODO: canonical not added — GitHub Pages source unverified (docs/ vs root). Do NOT guess; add real canonical once Pages source is confirmed. -->
+  <link rel="canonical" href="https://jdkabattles.github.io/verity/">
   <!-- TODO: add real Google Search Console verification code, then uncomment: <meta name="google-site-verification" content="REAL_CODE"> -->
   <!-- TODO: Bing already verified via BingSiteAuth.xml on sibling sites; add <meta name="msvalidate.01" content="REAL_CODE"> only if a Verity-specific code is issued. -->
   <meta name="msapplication-TileColor" content="#07090c">
@@ -115,7 +115,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Verity — evidence ledger for agent runs">
   <meta property="og:description" content="Verity is an append-only evidence ledger. A claim is accepted only when the recorded result supports it. Free, local, Apache-2.0.">
-  <!-- NOTE: og:image URL below is UNCHANGED from the original. TODO verify: it assumes Pages serves docs/ as root (jdkabattles.github.io/verity/logo.jpg) while the file lives at docs/logo.jpg. -->
+  <!-- VERIFIED 2026-10-16: Pages source is docs/; og:image URL confirmed live at https://jdkabattles.github.io/verity/logo.jpg. -->
   <meta property="og:image:alt" content="Verity mark">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Verity — evidence ledger for agent runs">
