@@ -1,0 +1,53 @@
+/* Verity — Directory Maps tether styles. Namespaced gt-tether-*. Styles ONLY its own elements. No global resets, no host overrides. Respects prefers-reduced-motion. */
+.gt-tether-tab {
+  min-height: 44px; padding: 10px 16px; border-radius: 999px;
+  border: 1px solid #1c2633; background: #0d1218; color: #e7eef6;
+  font: inherit; font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.gt-tether-tab:hover { border-color: #7ee0c6; }
+.gt-tether-fallback-tab {
+  position: fixed; right: 12px; bottom: 12px; z-index: 2147483000;
+  min-height: 44px; padding: 10px 16px; border-radius: 999px;
+  border: 1px solid #1c2633; background: #0d1218; color: #e7eef6;
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+.gt-tether-scrim {
+  position: fixed; inset: 0; z-index: 2147483001; background: rgba(0, 0, 0, 0.6);
+}
+.gt-tether-drawer {
+  position: fixed; top: 0; right: 0; z-index: 2147483002;
+  width: min(480px, 92vw); height: 100dvh; overflow-y: auto;
+  background: #0d1218; color: #e7eef6; border-left: 1px solid #1c2633;
+  padding: 24px; box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
+  font-family: ui-sans-serif, system-ui, sans-serif; line-height: 1.55;
+}
+.gt-tether-head { position: relative; }
+.gt-tether-title { margin: 0 0 8px; font-size: 28px; }
+.gt-tether-close-x {
+  position: absolute; top: 0; right: 0;
+  width: 44px; height: 44px; border-radius: 8px;
+  border: 1px solid #1c2633; background: #07090c; color: #e7eef6;
+  font-size: 24px; line-height: 1; cursor: pointer;
+}
+.gt-tether-intro { color: #8b9bb0; margin: 0 0 16px; }
+.gt-tether-search-label { display: block; font-weight: 700; margin-bottom: 6px; }
+.gt-tether-search {
+  width: 100%; min-height: 44px; padding: 10px 12px; border-radius: 8px;
+  border: 1px solid #1c2633; background: #07090c; color: #e7eef6; font: inherit;
+}
+.gt-tether-group { margin-top: 24px; }
+.gt-tether-group-title { margin: 0 0 10px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #7ee0c6; }
+.gt-tether-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.gt-tether-item { border: 1px solid #1c2633; border-radius: 10px; padding: 12px; background: #07090c; }
+.gt-tether-link { font-weight: 750; color: #7ee0c6; text-decoration: none; }
+.gt-tether-link:hover { text-decoration: underline; }
+.gt-tether-coming-title { font-weight: 750; }
+.gt-tether-coming-soon {
+  display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 999px;
+  border: 1px solid #7ee0c6; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #7ee0c6;
+}
+.gt-tether-desc { display: block; color: #8b9bb0; margin-top: 4px; }
+.gt-tether-empty { color: #8b9bb0; }
+@media (prefers-reduced-motion: reduce) {
+  .gt-tether-drawer, .gt-tether-tab, .gt-tether-fallback-tab { transition: none !important; animation: none !important; }
+}

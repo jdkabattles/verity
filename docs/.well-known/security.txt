@@ -1,0 +1,6 @@
+Contact: mailto:security@forgingstack.com
+Expires: 2027-05-13T00:00:00.000Z
+Canonical: https://jdkabattles.github.io/verity/.well-known/security.txt
+# TODO: verify security@forgingstack.com mailbox exists before launch.
+# TODO: no Policy line — no /security/policy page exists yet. Add it when the policy page is published.
+# TODO: update Canonical once the GitHub Pages source (docs/ vs root) is confirmed.

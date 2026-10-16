@@ -102,6 +102,60 @@
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
+<!-- === TECHNICAL ADDITIONS (Directory Maps + discovery + verification TODOs). No visible content changed. === -->
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#07090c">
+  <!-- TODO: canonical not added — GitHub Pages source unverified (docs/ vs root). Do NOT guess; add real canonical once Pages source is confirmed. -->
+  <!-- TODO: add real Google Search Console verification code, then uncomment: <meta name="google-site-verification" content="REAL_CODE"> -->
+  <!-- TODO: Bing already verified via BingSiteAuth.xml on sibling sites; add <meta name="msvalidate.01" content="REAL_CODE"> only if a Verity-specific code is issued. -->
+  <meta name="msapplication-TileColor" content="#07090c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta property="og:site_name" content="Verity">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Verity — evidence ledger for agent runs">
+  <meta property="og:description" content="Verity is an append-only evidence ledger. A claim is accepted only when the recorded result supports it. Free, local, Apache-2.0.">
+  <!-- NOTE: og:image URL below is UNCHANGED from the original. TODO verify: it assumes Pages serves docs/ as root (jdkabattles.github.io/verity/logo.jpg) while the file lives at docs/logo.jpg. -->
+  <meta property="og:image:alt" content="Verity mark">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verity — evidence ledger for agent runs">
+  <meta name="twitter:description" content="Verity is an append-only evidence ledger. A claim is accepted only when the recorded result supports it. Free, local, Apache-2.0.">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="stylesheet" href="map-tether.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Verity",
+    "url": "https://github.com/jdkabattles/verity"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Verity",
+    "url": "https://github.com/jdkabattles/verity"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Verity — evidence ledger for agent runs",
+    "description": "Verity is an append-only evidence ledger. A claim is accepted only when the recorded result supports it. Free, local, Apache-2.0.",
+    "isPartOf": { "@type": "WebSite", "name": "Verity", "url": "https://github.com/jdkabattles/verity" }
+  }
+  </script>
+  <!--
+    TODO: GOOGLE + MICROSOFT TRACKING — Verity is a PRODUCT / MARKETING page, so tracking is ALLOWED but DISABLED until real IDs are filled, then uncomment. Tracking never goes on tool pages.
+    TODO: fill real GTM container ID, then uncomment:
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    TODO: fill real GA4 measurement ID, then uncomment:
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+    TODO: fill real Microsoft Clarity ID, then uncomment:
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "REPLACE_WITH_CLARITY_ID");</script>
+  -->
 </head>
 <body>
   <header>
@@ -112,6 +166,8 @@
       <a href="#download">Download</a>
       <a href="#paid">Paid</a>
     </nav>
+    <span data-tether-mount></span>
+
   </header>
   <main id="top">
     <video class="hero-mark" autoplay muted loop playsinline poster="logo.jpg" aria-label="Verity mark">
@@ -251,5 +307,6 @@ verity check --run verity.jsonl --spec spec.json</pre>
       <a href="https://github.com/jdkabattles/verity">github.com/jdkabattles/verity</a>
     </footer>
   </main>
+  <script src="map-tether.js"></script>
 </body>
 </html>
