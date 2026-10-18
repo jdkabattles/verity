@@ -1,15 +1,16 @@
 /* Verity — Directory Maps tether. Vanilla, zero-dependency, no tracking, no external fetches.
    Tab says "Directory Maps". Drawer X top-right closes. Escape + scrim click also close.
    HONESTY RULE: a 'built' entry must link to a URL that actually serves that site today.
-   Staged / planned / not-yet-live targets are 'coming_soon', never 'built' with a dead link. */
+   Staged / planned / not-yet-live targets are 'coming_soon', never 'built' with a dead link.
+   'removed' entries show the page name + "Removed" underneath, NO live link, not clickable. */
 (function () {
   "use strict";
   var DIRECTORY = [
-    { group: "Hub", title: "Gold Is The Receipt", desc: "The hub. Live at /hub/.", url: "https://www.forgingstack.com/hub/", status: "built" },
-    { group: "Standard", title: "Algorithmic Gold", desc: "The six-gate verification standard. Done is a claim. GOLD is a receipt.", url: "https://jdkabattles.github.io/algorithmic-gold/", status: "built" },
-    { group: "Learn", title: "Blog", desc: "Essays behind the standard.", url: "https://jdkabattles.github.io/algorithmic-gold/blog/index.html", status: "built" },
-    { group: "Learn", title: "Pattern Atlas", desc: "49 cited patterns behind the gates.", url: "https://jdkabattles.github.io/algorithmic-gold/patterns/index.html", status: "built" },
-    { group: "Products", title: "Products", desc: "Live products under the standard.", url: "https://jdkabattles.github.io/algorithmic-gold/products/index.html", status: "built" },
+    { group: "Hub", title: "Gold Is The Receipt", desc: "Removed.", url: null, status: "removed" },
+    { group: "Standard", title: "Algorithmic Gold", desc: "Removed — claims unverified.", url: null, status: "removed" },
+    { group: "Learn", title: "Blog", desc: "Removed — claims unverified.", url: null, status: "removed" },
+    { group: "Learn", title: "Pattern Atlas", desc: "Removed — claims unverified.", url: null, status: "removed" },
+    { group: "Products", title: "Products", desc: "Removed — claims unverified.", url: null, status: "removed" },
     { group: "Products", title: "Avcal-Agent", desc: "Sandboxed hidden-suite verification for agent-written code. Live at /avcal-agent/.", url: "https://www.forgingstack.com/avcal-agent/", status: "built" },
     { group: "Products", title: "harwatch", desc: "Freeze an API from a HAR. Fail the build when a field disappears. Live at /harwatch/.", url: "https://www.forgingstack.com/harwatch/", status: "built" },
     { group: "Products", title: "mimicplus", desc: "Client-side HAR sanitizer that never uploads data. Live at forgingstack.com (its home).", url: "https://www.forgingstack.com/", status: "built" },
@@ -64,7 +65,10 @@
       var ul = el("ul", "gt-tether-list");
       groups[g].forEach(function (e) {
         var li = el("li", "gt-tether-item");
-        if (e.status === "coming_soon") {
+        if (e.status === "removed") {
+          li.appendChild(el("strong", "gt-tether-coming-title", e.title));
+          li.appendChild(el("span", "gt-tether-coming-soon", "Removed"));
+        } else if (e.status === "coming_soon") {
           li.appendChild(el("strong", "gt-tether-coming-title", e.title));
           li.appendChild(el("span", "gt-tether-coming-soon", "Coming Soon"));
         } else {
